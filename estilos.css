@@ -161,6 +161,16 @@ main {
     text-shadow: 2px 2px #000;
 }
 
+#tags span {
+    cursor: pointer;
+}
+
+#tags span:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
 .tag-1,
 .tag-2,
 .tag-3 {
@@ -196,7 +206,7 @@ footer .logo-rodape {
 }
 
 #inscreva-se p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 /* --- Vídeo --- */
