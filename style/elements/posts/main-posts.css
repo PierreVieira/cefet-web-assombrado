@@ -1,0 +1,54 @@
+#posts-principais {
+    padding-top: 1.5em;
+}
+
+#posts-principais h1 {
+    margin-bottom: 1em;
+}
+
+#posts-principais article {
+    width: 40%;
+    max-width: 400px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    position: relative;
+}
+
+#posts-principais article img {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 6px solid white;
+    margin-bottom: .5em;
+}
+
+#posts-principais article .titulo {
+    text-shadow: 1px 1px black;
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    transition: all 200ms ease;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#posts-principais article:hover .titulo {
+    top: 6px;
+    opacity: 1;
+}
+
+#posts-principais article .overlay {
+    top: 0;
+    opacity: 0;
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 90.8%;
+    transition: all 200ms ease;
+}
+
+#posts-principais article:hover .overlay {
+    top: 0;
+    opacity: 0.4;
+}

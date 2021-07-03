@@ -1,0 +1,11 @@
+.boos img {
+    width: 40px;
+    opacity: 0.2;
+    transform: scaleX(-1);
+    transition: all 200ms ease;
+    position: relative;
+}
+
+.boos img:hover {
+    opacity: 1;
+}

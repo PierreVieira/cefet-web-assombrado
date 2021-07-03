@@ -1,0 +1,17 @@
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Special Elite", cursive;
+}
+
+h2 {
+    font-family: "Aldrich", sans-serif;
+}
+
+h1 + h2 {
+    font-size: 100%;
+    margin-top: 0.5em;
+    color: silver;
+}

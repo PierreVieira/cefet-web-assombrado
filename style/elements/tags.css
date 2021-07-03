@@ -1,0 +1,49 @@
+#tags {
+    float: right;
+    width: 300px;
+    padding: 15px;
+    background-color: black;
+    background-image: url(../../midia/imgs/mula.webp);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+#tags h1 {
+    margin-bottom: 1em;
+    text-shadow: 2px 2px #000;
+}
+
+#tags span {
+    cursor: pointer;
+}
+
+#tags span:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.tag-1,
+.tag-2,
+.tag-3 {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 2px;
+    background-color: orange;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.tag-2 {
+    font-size: 125%;
+}
+
+.tag-3 {
+    font-size: 150%;
+}

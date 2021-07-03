@@ -4,7 +4,7 @@
 // e também (b) procure pela palavra 'click' neste arquivo e a substitua
 // por 'mouseenter'. Veja no que dá!
 //
-const DISTANCIA_PERCORRIDA_MAXIMA = 80; // em px
+const DISTANCIA_PERCORRIDA_MAXIMA = 150; // em px
 const TEMPO_PARA_MUDAR_DE_LADO = 250;   // em ms (milissegundos)
 const DURACAO_DO_MOVIMENTO = 500;       // idem
 
@@ -33,7 +33,7 @@ boos.forEach(booEl => {
   booEl.style.cursor = 'pointer';
 
   // quando este boo for clicado...
-  booEl.addEventListener('click', e => {
+  booEl.addEventListener('mouseenter', e => {
     let booEl = e.currentTarget;
     // largura e altura máximas até onde ele pode ir
     let larguraDisponivelNaPagina = document.body.clientWidth;
@@ -54,7 +54,6 @@ boos.forEach(booEl => {
     // garante que a nova coordenada (x,y) não saiu da página
     novoX = Math.min(larguraDisponivelNaPagina - booEl.width, Math.max(0, novoX));
     novoY = Math.min(alturaDisponivelNoContainer - booEl.height, Math.max(0, novoY));
-
     const estaViradoParaEsquerda = booEl.style.transform === 'scaleX(-1)';
     const estaViradoParaDireita = !estaViradoParaEsquerda;
     const vaiAndarParaDireita = novoX > booEl.offsetLeft;
@@ -71,15 +70,19 @@ boos.forEach(booEl => {
     // se andou para a direita, não reflete a imagem
     if (vaiAndarParaDireita) {
       booEl.style.transform = 'scaleX(1)';
+      console.log('Vai andar para direita')
     }
     // se andou para a esquerda, reflete (gira 180°)
     else {
       booEl.style.transform = 'scaleX(-1)';
+      console.log('Vai andar para esquerda')
     }
 
     // atualiza as propriedades CSS para efetivamente mudar a posição
     booEl.style.left = `${novoX}px`;
     booEl.style.top = `${novoY}px`;
+
+    console.log(`Novo x: ${novoX}\nNovo y: ${novoY}`)
 
     // temporariamente, torna este boo opaco e não responder a eventos de mouse
     // (pra não começar outro movimento antes de terminar este)

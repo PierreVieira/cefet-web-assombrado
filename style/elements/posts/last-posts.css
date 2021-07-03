@@ -1,0 +1,34 @@
+#ultimas-postagens {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#ultimas-postagens article {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#ultimas-postagens article .data-horario {
+    background-color: white;
+    color: #333;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#ultimas-postagens .titulo {
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.novidade::before {
+    content: "Novidade!";
+    display: inline-block;
+    background-color: darkgoldenrod;
+    padding: 3px;
+    border: 1px solid gold;
+    border-radius: 2px;
+}

@@ -1,0 +1,23 @@
+@import "elements/boos.css";
+@import "elements/links.css";
+@import "elements/titles.css";
+@import "elements/tags.css";
+@import "elements/header.css";
+@import "elements/footer.css";
+@import "elements/video.css";
+@import "elements/posts/main-posts.css";
+@import "elements/posts/last-posts.css";
+
+body {
+    background-image: url(../midia/imgs/fundo-assombrado.jpg);
+    background-size: cover;
+    color: white;
+    margin: 0;
+    font-family: monospace;
+}
+
+main {
+    padding-left: 2.5%;
+    transition: opacity 1s linear;
+    padding-bottom: 3em;
+}
