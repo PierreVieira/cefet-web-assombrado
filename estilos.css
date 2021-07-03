@@ -141,6 +141,15 @@ main {
     display: inline-block;
 }
 
+.novidade::before {
+    content: "Novidade!";
+    display: inline-block;
+    background-color: darkgoldenrod;
+    padding: 3px;
+    border: 1px solid gold;
+    border-radius: 2px;
+}
+
 
 /* --- Principal >> Nuvem de tags --- */
 #tags {
