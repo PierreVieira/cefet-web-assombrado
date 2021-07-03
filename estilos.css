@@ -185,24 +185,19 @@ main {
   font-size: 150%;
 }
 
-
-
-
-
 /* --- Footer --- */
 footer {
   background-color: rgba(0, 0, 0, .7);
   padding: 1em;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .logo-rodape {
   margin-right: 2em;
 }
-
-
-
-
 
 /* --- Vídeo --- */
 .backdrop {
